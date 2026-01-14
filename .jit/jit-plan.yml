@@ -30,6 +30,9 @@ items:
   - name: Scan Kubernetes configuration files
     uses: >-
       jitsecurity-controls/jit-plans/items/infrastructure/item-iac-kubernetes.yml@latest
+  - name: Scan your container images on-build
+    uses: >-
+      jitsecurity-controls/jit-plans/items/infrastructure/item-container-scan-on-build.yml@latest
 override:
   workflows:
     secret-detection:
