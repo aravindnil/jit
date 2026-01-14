@@ -33,6 +33,9 @@ items:
   - name: Scan your container images on-build
     uses: >-
       jitsecurity-controls/jit-plans/items/infrastructure/item-container-scan-on-build.yml@latest
+  - name: Verify that MFA for your GitHub organization is enabled
+    uses: >-
+      jitsecurity-controls/jit-plans/items/third_party_app/item-mfa-scm.yml@latest
 override:
   workflows:
     secret-detection:
